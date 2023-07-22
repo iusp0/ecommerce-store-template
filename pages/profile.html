@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="https://kit.fontawesome.com/08252e9706.js" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.maskedinput.js"></script>
+    <script src="../js/phone-input.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header_wrapper">
+            <nav class="navigation">
+                <ul class="links">
+                    <a href="#start">Каталог</a>
+                    <a href="#adbout-us">Главная</a>
+                </ul>
+                <div class="logo">
+                    <a href="#">
+                        <img src="../img/svg_icons/logo.png" alt="logo">
+                        <h1>Bard Store</h1>
+                    </a>
+                </div>
+                <div class="profile_items">
+                    <a href="#">
+                        <img src="../img/svg_icons/user.svg" alt="user_icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/svg_icons/shopping-cart.svg" alt="user_icon">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="main_wrapper">
+                <div class="row-container">
+                    <div class="row">
+                        <h2>Добро пожаловать Пользователь!</h2>
+                        <div class="nav_menu">
+                            <a class="nav_item active" href="#"><img src="../img/svg_icons/user.svg" alt="img"><span>Персональные данные</span></a>
+                            <a class="nav_item" href="#"><img src="../img/svg_icons/package.svg" alt="img"><span>Покупки</span></a>
+                            <a class="nav_item" href="#"><img src="../img/svg_icons/heart.svg" alt="img"><span>Избранные</span></a>
+                            <a class="nav_item" href="#"><img src="../img/svg_icons/lock.svg" alt="img"><span>Изменить пароль</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_content">
+                    <h1>Персональные данные</h1>
+                    <form class="form" action="" method="post">
+                        <h5>ИМЯ ПОЛЬЗОВАТЕЛЯ</h5>
+                        <input class="form-input" type="text" name="username" placeholder="Имя">
+                        <div class="phone-email-container">
+                            <input class="form-input input-width" type="text" id="phone-number" placeholder="Номер телефона">
+                            <input class="form-input input-width" type="email" name="email" placeholder="E-mail">
+                        </div>
+                        <h5>ДАТА РОЖДЕНИЯ (необязательно)</h5>
+                        <input class="form-input date-input" type="text" name="date" placeholder="ДЕНЬ/МЕСЯЦ/ГОД">
+                        <div class="gender-container">
+                            <h5>ПОЛ</h5>
+                            <div class="gender-items">
+                                <div class="form_radio">
+                                    <input id="radio-1" type="radio" name="radio">
+                                    <label class="gender" for="radio-1">Мужчина</label>
+                                </div>
+                                <div class="form_radio">
+                                    <input id="radio-2" type="radio" name="radio">
+                                    <label class="gender" for="radio-2">Женщина</label>
+                                </div>
+                                <div class="form_radio">
+                                    <input id="radio-3" type="radio" name="radio">
+                                    <label class="gender" for="radio-3">Другой</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form-btn" type="submit">Сохранить изменения</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="left-footer-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="../img/svg_icons/footer-logo.png" alt="logo">
+                    <h1 class="footer-h1">Bard Store</h1>
+                </a>
+            </div>
+            <div id="contacts" class="contacts">
+                <h4>Наши контакты</h4>
+                <p>+996 (999) 34-45-34</p>
+                <p>Московская 34 / Ибраимова</p>
+                <p>example@gmail.com</p>
+            </div>
+        </div>
+        <div class="rigth-footer-block">
+            <div class="for-buyers">
+                <h5>КАТАЛОГ</h5>
+                <a href="#">НОВИНКИ</a>
+                <a href="#">ЖЕНСКАЯ ОДЕЖДА</a>
+                <a href="#">МУЖСКАЯ ОДЕЖДА</a>
+                <a href="#">ДЕТСКИЕ</a>
+                <a href="#">СКИДКИ</a>
+            </div>
+            <div class="for-buyers">
+                <h5>ПОКУПАТЕЛЯМ</h5>
+                <a href="#">О КОМПАНИИ</a>
+                <a href="#">ДОСТАВКА И ОПЛАТА</a>
+                <a href="#">НЕ ПОЛУЧЕН ТОВАР</a>
+                <a href="#">КОНТАКТЫ</a>
+                <a href="#">ТАБЛИЦА РАЗМЕРОВ</a>
+            </div>
+            <div class="socials">
+                <h5>СОЦИАЛЬНЫЕ СЕТИ</h5>
+                <div class="social-items">
+                    <a href="#"><img src="../img/svg_icons/telegram.png" alt="facebook"></a>
+                    <a href="#"><img src="../img/svg_icons/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="../img/svg_icons/tiktok.png" alt="tiktok"></a>
+                    <a href="#"><img src="../img/svg_icons/whatsapp.png" alt="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
